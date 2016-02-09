@@ -6,3 +6,5 @@ npm install --save webpack
 npm install --save jsx-loader
 npm install --save babel-loader
 npm install --save babel-core
+npm install --save bootstrap-webpack
+npm install --save jquery
