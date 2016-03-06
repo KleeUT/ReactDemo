@@ -4,11 +4,11 @@ const NewsItem = require('./NewsItem.jsx');
 const NewNewsItemForm = require('./NewNewsItemForm.jsx');
 const Root = React.createClass({
     getInitialState(){
-        return {items:[{key:0, value:'Item 0'}, {key:1, value:'Item 1'}]};
+        return {items:[]};
     },
     addNewNewsItem(newsItem){
         var data = this.state.items;
-        data.push({key:2,value: newsItem});
+        data.push({key:newsItem, value: newsItem});
         this.setState({items:data})
     },
     render(){
